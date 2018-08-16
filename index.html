@@ -2,11 +2,145 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>七夕快乐</title>
+    <link rel="stylesheet" href="./index.css"/>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script>
+        var clickCount = 0;
+
+        $(function () {
+            var flag=true;
+            $(".left").click(function(){
+                if(flag){
+                    flag=false;
+                    clickCount--;
+                    $(".container li").css({
+                        transform:"rotateX("+clickCount*90+"deg)"
+                    })
+                    setTimeout(function(){
+                        flag=true;
+                    },1300)
+                }
+
+            })
+            $(".right").click(function () {
+//                console.log(flag)
+                if(flag){
+                    flag=false;
+//                    console.log(flag);
+                    clickCount++;
+                    $(".container li").css({
+                        transform: "rotateX(" + clickCount * 90 + "deg)"
+                    })
+//                    flag=true;
+//                    console.log(flag)
+                    setTimeout(function(){
+                        flag=true;
+                    },1300)
+                }
+            })
+
+        })
+    </script>
+
 </head>
 <body>
-<div>
-    hahhahahhahahahah
+<div class="biaoti">
+    最美大巧&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;七夕快乐!
 </div>
+<div class="chest">
+    <div class="heart left side top"></div>
+    <div class="heart center"></div>
+    <div class="heart right side"></div>
+</div>
+<div class="view">
+    <ul>
+        <li><img src="./images/psb.webp" alt=""></li>
+        <li><img src="./images/psb%20(9).webp" alt=""></li>
+        <li><img src="./images/psb%20(1).webp" alt=""></li>
+        <li><img src="./images/psb%20(10).webp" alt=""></li>
+        <li><img src="./images/psb%20(11).webp" alt=""></li>
+        <li><img src="./images/psb%20(12).webp" alt=""></li>
+        <li><img src="./images/psb%20(13).webp" alt=""></li>
+
+
+        <li><img src="./images/psb%20(2).jfif" alt=""></li>
+        <li><img src="./images/psb%20(2).webp" alt=""></li>
+        <li><img src="./images/psb%20(3).jfif" alt=""></li>
+        <li><img src="./images/psb%20(3).webp" alt=""></li>
+        <li><img src="./images/psb%20(4).webp" alt=""></li>
+        <li><img src="./images/psb%20(5).webp" alt=""></li>
+        <li><img src="./images/psb%20(7).webp" alt=""></li>
+    </ul>
+</div>
+
+<ul class="container h3">
+    <li>
+        <div class="first"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+    </li>
+    <li>
+        <div class="first"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+    </li>
+    <li>
+        <div class="first"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+    </li>
+    <li>
+        <div class="first"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+    </li>
+
+
+    <a href="javascript:void(0)" class="left">&lt;</a>
+    <a href="javascript:void(0)" class="right">&gt;</a>
+</ul>
+<div class="gao">
+    <div class="wrap">
+        <img src="./images/psb%20(11).jfif" alt=""/>
+    </div>
+
+</div>
+
+<div class="yuzhou">
+    <ul>
+        <li></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span><span></span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span><span></span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+    </ul>
+</div>
+<div class="biaoyu">
+    <p>愿你</p>
+    <p>干净的圈子</p>
+    <p>规律的生活</p>
+    <p>简单的爱情</p>
+    <p>活成自己想要的样子</p>
+    <p class="p1">你那不为人知的美丽</p>
+    <p class="p2">不及我第一次遇见你</p>
+    <p class="p3">打开下面的门，是你最美的样子</p>
+
+
+</div>
+<section>
+    <div class="door-l"></div>
+    <div class="door-r"></div>
+</section>
+
 </body>
 </html>
